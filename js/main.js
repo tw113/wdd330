@@ -9,7 +9,7 @@ const links = [
   },
   {
     label: 'Week 3 practice project',
-    url: 'week3/index.html',
+    url: 'udemy-course/dom-assignment-start/index.html',
   }
 ];
 

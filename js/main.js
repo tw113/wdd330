@@ -7,6 +7,10 @@ const links = [
     label: 'Week 2 practice project',
     url: 'udemy-course/basics-01-starting-project/index.html',
   },
+  {
+    label: 'Week 3 practice project',
+    url: 'week3/index.html',
+  }
 ];
 
 const linkList = document.getElementById('table-of-contents');

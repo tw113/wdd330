@@ -10,6 +10,10 @@ const links = [
   {
     label: 'Week 3 practice project',
     url: 'udemy-course/dom-assignment-start/index.html',
+  },
+  {
+    label: 'Week 4 practice project',
+    url: 'week4/index.html',
   }
 ];
 

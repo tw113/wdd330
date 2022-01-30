@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Week 4</title>
+</head>
+<body>
+  <div class="form-container">
+    <a id="form"></a>
+    <form>
+      <h2>Contact Me</h2>
+      <select name="reason">
+        <option value="IT Problem">Select a Reason</option>
+        <option value="IT Problem">IT Problem</option>
+        <option value="Job Inquiry">Job Inquiry</option>
+        <option value="Say Hi">Say Hi</option>
+      </select>
+      <input type="text" placeholder="Name" name="name">
+      <input type="text" placeholder="Email" name="email">
+      <textarea placeholder="Message" name="message"></textarea>
+      <br>
+      <label>Who Are You?</label>
+      <input type="radio" name="who" value="recruiter" checked> Recruiter
+      <input type="radio" name="who" value="companyrep"> Company Representative
+      <input type="radio" name="who" value="client"> I Need Help
+      <br>
+      <label>How Should I Get Back To You?</label>
+      <input type="checkbox" name="responseType" value="sendemail" checked> Reply with Email
+      <input type="checkbox" name="responseType" value="call"> Reply with a Call
+      <input type="checkbox" name="responseType" value="text"> Reply on LinkedIn
+      <br>
+      <input type="reset">
+      <input type="submit">
+    </form>
+  </div>
+</body>
+</html>

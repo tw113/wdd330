@@ -120,7 +120,7 @@ form {
   padding: 10px 30px;
 }
 
-input {
+input, button {
   width: 90%;
   padding: 10px;
   margin: 10px;
@@ -154,13 +154,25 @@ input[type=checkbox] {
   text-align: left;
 }
 
-input[type=submit] {
+/* input[type=submit] {
   width: 100px;
   background-color: darkslategray;
   color: white;
 }
 
 input[type=submit]:hover {
+  width: 100px;
+  cursor: pointer;
+  background-color: slategray;
+} */
+
+button {
+  width: 100px;
+  background-color: darkslategray;
+  color: white;
+}
+
+button:hover {
   width: 100px;
   cursor: pointer;
   background-color: slategray;

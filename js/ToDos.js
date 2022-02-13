@@ -10,8 +10,7 @@ class Todo {
 }
 
 let todoList = [];
-
-refreshTodos();
+sessionStorage.setItem('tasks', '');
 
 function refreshTodos(filter = 'all') {
   let theList = getListFromSessionStorage();
@@ -20,10 +19,10 @@ function refreshTodos(filter = 'all') {
 
   switch (filter) {
     case 'active':
-      theList = theList.filter(task => task.complete == false)
+      theList = theList.filter((task) => task.complete == false);
       break;
     case 'complete':
-      theList = theList.filter(task => task.complete == true)
+      theList = theList.filter((task) => task.complete == true);
       break;
     default:
       break;
@@ -54,38 +53,43 @@ function removeTodo(event) {
 }
 
 function filterAll() {
-  const button = document.getElementById('btn-all')
-  const button2 = document.getElementById('btn-active')
-  const button3 = document.getElementById('btn-complete')
-  button.classList.add('active'); 
-  button2.classList.remove('active'); 
-  button3.classList.remove('active'); 
-  refreshTodos('all') 
+  const button = document.getElementById('btn-all');
+  const button2 = document.getElementById('btn-active');
+  const button3 = document.getElementById('btn-complete');
+  button.classList.add('active');
+  button2.classList.remove('active');
+  button3.classList.remove('active');
+  refreshTodos('all');
 }
 
-function filterActive() { 
-  const button = document.getElementById('btn-active')
-  const button2 = document.getElementById('btn-all')
-  const button3 = document.getElementById('btn-complete')
-  button.classList.add('active'); 
-  button2.classList.remove('active'); 
-  button3.classList.remove('active'); 
-  refreshTodos('active') 
+function filterActive() {
+  const button = document.getElementById('btn-active');
+  const button2 = document.getElementById('btn-all');
+  const button3 = document.getElementById('btn-complete');
+  button.classList.add('active');
+  button2.classList.remove('active');
+  button3.classList.remove('active');
+  refreshTodos('active');
 }
 
-function filterComplete() { 
-  const button = document.getElementById('btn-complete')
-  const button2 = document.getElementById('btn-active')
-  const button3 = document.getElementById('btn-all')
-  button.classList.add('active'); 
-  button2.classList.remove('active'); 
-  button3.classList.remove('active'); 
-  refreshTodos('complete') 
+function filterComplete() {
+  const button = document.getElementById('btn-complete');
+  const button2 = document.getElementById('btn-active');
+  const button3 = document.getElementById('btn-all');
+  button.classList.add('active');
+  button2.classList.remove('active');
+  button3.classList.remove('active');
+  refreshTodos('complete');
 }
 
 function getListFromSessionStorage() {
   const sessionItem = sessionStorage.getItem('tasks');
-  return JSON.parse(sessionItem);
+
+  if (sessionItem != '') {
+    return JSON.parse(sessionItem);
+  } else {
+    return [];
+  }
 }
 
 function addListToSessionStorage(theList) {

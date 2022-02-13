@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles-todo.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="todo-app">
+      <h1>Todo List</h1>
+      <div id="toolbar-container">
+        <div class="keep-left">
+          <h3 id="task-count">0 Tasks</h3>
+        </div>
+        <button class="active" id="btn-all" onclick="filterAll()">All</button>
+        <button id="btn-active" onclick="filterActive()">Active</button>
+        <button id="btn-complete" onclick="filterComplete()">Complete</button>
+      </div>
+      <div id="todo-list"></div>
+      <div id="add-todo-container">
+        <form id="add-todo-form" name="add-todo-form">
+          <input type="text" name="add-todo" id="add-todo-box" required />
+          <button type="button" id="add-button" onclick="addTodo()">+</button>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <script src="../js/ToDos.js"></script>
+</html>

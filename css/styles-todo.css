@@ -1,0 +1,97 @@
+h1 {
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 10px;
+  color: rgb(29, 29, 29);
+}
+
+h2 {
+  font-family: sans-serif;
+  margin: 10px;
+  font-weight: 400;
+}
+
+h3 {
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: unset;
+}
+
+h4 {
+  margin: 0;
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: unset;
+}
+
+button {
+  border: solid 1px lightgray;
+  padding: 10px;
+}
+
+button.active {
+  border: solid 1px lightgray;
+  background-color: slategray;
+  color: white;
+  padding: 10px;
+}
+
+.keep-left {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.keep-right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#todo-app {
+  margin: 20px;
+  max-width: 400px;
+  background-color: rgb(238, 238, 238);
+}
+
+#toolbar-container {
+  background-color: white;
+  border: solid 1px lightgray;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#todo-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-item {
+  display: flex;
+  width: 100%;
+  border-bottom: solid 1px lightgray;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#add-todo-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+}
+
+#add-todo-box {
+  border: solid 1px lightgray;
+  padding: 10px;
+}
+
+#add-button {
+  border: solid 1px lightgray;
+  background-color: white;
+  width: 40px;
+}

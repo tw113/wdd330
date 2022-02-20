@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Tanner Wilson's Enhanced Home Page</title>
+  <link rel="stylesheet" type="text/css" href="ecommerce-styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    h3 {
+      font-family: Arial;
+      font-size: 40px;
+      font-weight: 100;
+      color: #816f61;
+      text-align: center;
+    }
+
+    .item-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+    }
+
+    .item {
+      transition: .5s ease;
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+      box-shadow: gray 2px 5px 10px;
+    }
+
+    .item img {
+      display: block;
+      width: 300px;
+      margin: auto;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    h4.product-name {
+      margin: 0;
+      padding: 0;
+      font-family: Arial;
+      font-size: 24px;
+      color: white;
+    }
+
+    h5.price {
+      font-family: Arial;
+      font-size: 18px;
+      color: black;
+      margin: 12px;
+    }
+
+    .center-of-img {
+      transition: .5s ease;
+      opacity: 0;
+      position: relative;
+      top: -55%;
+      width: inherit;
+      text-align: center;
+    }
+
+    .item:hover {
+      opacity: 0.6;
+    }
+
+    .item:hover .center-of-img {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="site-logo-container">
+      <a href="index.html"><img src="logo_outline.png" alt="Site Logo"></a>
+      <div id="site-title">
+        <h1>Paradox Kook</h1>
+        <h2>clothing for exploring the world</h2>
+      </div>
+      <div id="top-links">
+        <ul>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">Store</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li class="cart"><a href="">
+          <img src="cart.png" alt="cart-icon">
+        </a></li>
+      </ul>
+    </div>
+  </header>
+  <section class="content-title">
+    <h3>Store</h3>
+  </section>
+  <div class="content-container">
+    <div class="side-nav">
+      <ul>
+        <li><a href="index.html">All</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Boys</a></li>
+        <li><a href="#">Girls</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Backpacks</a></li>
+        <li><a href="#">Adventure Gadgets</a></li>
+      </ul>
+    </div>
+    <div class="item-list">
+      <a href="detail.html"><div class="item">
+        <img src="hoodie.png" alt="Hoodie">
+        <div class="center-of-img">
+          <h4 class="product-name">Earth Logo Hoodie</h4>
+          <h5 class="price">$50</h5>
+        </div>
+      </div></a>
+      <a href=""><div class="item">
+        <img src="hat.png" alt="Hoodie">
+        <div class="center-of-img">
+          <h4 class="product-name">Blue Logo Hat</h4>
+          <h5 class="price">$30</h5>
+        </div>
+      </div></a>
+      <a href=""><div class="item">
+        <img src="bus.png" alt="Hoodie">
+        <div class="center-of-img">
+          <h4 class="product-name">Earth Bus Tee</h4>
+          <h5 class="price">$20</h5>
+        </div>
+      </div></a>
+      <a href=""><div class="item">
+        <img src="bigfoot.png" alt="Hoodie">
+        <div class="center-of-img">
+          <h4 class="product-name">Whitegray Bigfoot Tee</h4>
+          <h5 class="price">$20</h5>
+        </div>
+      </div></a>
+      <a href=""><div class="item">
+        <img src="mountains.png" alt="Hoodie">
+        <div class="center-of-img">
+          <h4 class="product-name">Whitegray Mountains Tee</h4>
+          <h5 class="price">$20</h5>
+        </div>
+      </div></a>
+      <a href=""><div class="item">
+        <img src="beanie.png" alt="Hoodie">
+        <div class="center-of-img">
+          <h4 class="product-name">Green/Earth Mountains Beanie</h4>
+          <h5 class="price">$30</h5>
+        </div>
+      </div></a>
+    </div>
+  </div>
+  <footer>
+
+  </footer>
+</body>
+
+</html>

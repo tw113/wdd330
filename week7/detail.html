@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Tanner Wilson's Enhanced Home Page</title>
+  <link rel="stylesheet" type="text/css" href="ecommerce-styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    .content-container-product {
+      display: flex;
+      margin-top: 80px;
+      margin-bottom: 40px;
+    }
+
+    .product-view {
+      display: flex;
+    }
+
+    .product-pictures.thumb-pics {
+      display: flex;
+    }
+
+    .thumb-pic {
+      width: 60px;
+      margin: 10px 5px 0 0;
+    }
+
+    .product-details {
+      padding: 20px;
+      margin-left: 60px;
+    }
+
+    .product-details h4 {
+      font-family: Arial;
+      font-size: 30px;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    .product-details h5 {
+      font-family: Arial;
+      font-size: 22px;
+      color: #816f61;
+      margin-top: 0;
+    }
+
+    .product-details h5 span {
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: 100;
+      color: #adadad;
+    }
+
+    .product-details p {
+      width: 400px;
+      font-family: sans-serif;
+      color: darkslategray;
+    }
+
+    .choose-size {
+      width: 200px;
+      flex-direction: column;
+    }
+
+    .choose-size select {
+      padding: 10px;
+    }
+
+    .choose-size p {
+      width: 100%;
+    }
+
+    .choose-size button {
+      border: none;
+      padding: 20px;
+      margin-top: 40px;
+      font-family: Arial;
+      font-weight: bold;
+      font-size: 18px;
+      color: white;
+      background-color: #816f61;
+    }
+
+    .choose-size button:hover {
+      cursor: pointer;
+      color: white;
+      background-color: gray;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="site-logo-container">
+      <a href="index.html"><img src="logo_outline.png" alt="Site Logo"></a>
+      <div id="site-title">
+        <h1>Paradox Kook</h1>
+        <h2>clothing for exploring the world</h2>
+      </div>
+      <div id="top-links">
+        <ul>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">Store</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li class="cart"><a href="">
+            <img src="cart.png" alt="cart-icon">
+          </a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="content-container-product">
+    <div class="side-nav">
+      <ul>
+        <li><a href="index.html">All</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Boys</a></li>
+        <li><a href="#">Girls</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Backpacks</a></li>
+        <li><a href="#">Adventure Gadgets</a></li>
+      </ul>
+    </div>
+    <div class="product-view">
+      <div class="product-pictures">
+        <div class="main-pic">
+          <img src="hoodie.png" alt="Hoodie">
+        </div>
+        <div class="thumb-pics">
+          <img class="thumb-pic" src="hoodie.png" alt="Hoodie">
+          <img class="thumb-pic" src="hoodie02.png" alt="Hoodie">
+          <img class="thumb-pic" src="hoodie03.png" alt="Hoodie">
+        </div>
+      </div>
+      <div class="product-details">
+        <h4>Logo Hoodie</h4>
+        <h5>$50<span class="plus-shipping"> + Shipping</span></h5>
+        <p>
+          Explore higher heights with this Earth Brown Paradox Kook Logo Hoodie. It looks
+          like a regular hoodie on the outside, but on the inside there's an insulation
+          layer to keep you warm while you are in the mountains.
+        </p>
+        <form>
+          <div class="choose-size">
+            <p style="font-size: 13px; color: #816f61;">Choose Your Size</p>
+            <select>
+              <option value="default">Select an Option</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+            <input type="submit" value="Add To Cart"></input>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+  <footer>
+
+  </footer>
+</body>
+
+</html>

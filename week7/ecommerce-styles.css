@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+}
+
+/*---------------------------------------------------------
+Site Header
+---------------------------------------------------------*/
+#site-logo-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#site-logo-container img {
+  display: block;
+  height: 100px;
+  padding: 20px;
+}
+
+#site-title {
+  display: block;
+  align-self: center;
+  margin: 0;
+}
+
+#site-title h1 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: 'Trebuchet MS';
+  font-size: 45px;
+}
+
+#site-title h2 {
+  text-align: center;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  margin: 0;
+  color: #816f61;
+}
+
+#top-links ul {
+  list-style-type: none;
+  display: flex;
+  height: 100%;
+  margin-right: 20px;
+  padding: 0;
+}
+
+#top-links a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial;
+  color: #816f61;
+}
+
+.navbar {
+  padding-left: 20px;
+  background-color: gray;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .cart a {
+  padding: 0;
+  transition: .5s ease;
+}
+
+.navbar li.cart {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.navbar a {
+  display: block;
+  text-decoration: none;
+  padding: 16px;
+  text-align: center;
+  color: white;
+  font-family: Arial;
+}
+
+.navbar a:hover {
+  display: block;
+  text-decoration: none;
+  padding: 16px;
+  text-align: center;
+  background-color: #816f61;
+}
+
+/*---------------------------------------------------------
+Side Navigation
+---------------------------------------------------------*/
+.content-container {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.side-nav {
+  min-width: 200px;
+  padding: 20px;
+  font-family: Arial;
+  font-size: 18px;
+
+}
+
+.side-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-nav li {
+  margin-bottom: 10px;
+}
+
+.side-nav a {
+  text-decoration: none;
+  color: rgb(31, 31, 31);
+}
+
+.side-nav a:hover {
+  color: #816f61;
+}
+
+/*---------------------------------------------------------
+Site Footer
+---------------------------------------------------------*/
+footer {
+  height: 200px;
+  background-color: lightgray;
+}

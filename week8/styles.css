@@ -7,6 +7,10 @@ body {
   font-family: 'Roboto Serif', sans-serif;
 }
 
+h1 {
+  text-align: center;
+}
+
 h2 {
   width: 90%;
   border: none;

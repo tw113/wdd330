@@ -26,6 +26,10 @@ const links = [
   {
     label: 'Week 7 practice project',
     url: 'week7/index.html',
+  },
+  {
+    label: 'Week 8 practice project',
+    url: 'week8/index.html',
   }
 ];
 

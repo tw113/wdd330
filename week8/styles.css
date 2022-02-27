@@ -1,0 +1,66 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  font-family: 'Roboto Serif', sans-serif;
+}
+
+h2 {
+  width: 90%;
+  border: none;
+  padding: 30px;
+  font-family: 'Roboto Serif', sans-serif;
+  font-size: 2em;
+  color: rgb(126, 126, 126);
+  letter-spacing: 3px;
+  line-height: 1.6;
+}
+
+.keycap {
+  fill: #94B49F;
+}
+
+.keytext {
+  fill: white;
+}
+
+#case {
+  fill: #b4cfb0;
+}
+
+#keyboard {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+span {
+  width: 0;
+  margin: 0;
+  padding: 3px;
+  color: rgb(53, 53, 53);
+}
+
+.error {
+  background-color: lightcoral;
+}
+
+.blink {
+  position: relative;
+  left: 5px;
+  overflow: hidden;
+  letter-spacing: 0;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #94B49F;
+  }
+}

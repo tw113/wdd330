@@ -19,10 +19,10 @@ email.addEventListener('input', function (event) {
 getBtn.addEventListener('click', () => {
   const res = fetch('http://colormind.io/api/', {
     method: 'POST',
-    mode: 'no-cors',
+    mode: 'cors',
     cache: 'no-cache',
     headers: {
-      'Content-Type': 'text/plain',
+      'Content-Type': 'text/plain'
     },
     body: JSON.stringify(sendData),
   })

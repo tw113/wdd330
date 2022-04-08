@@ -30,7 +30,7 @@ function paragraphRight() {
 }
 
 function getParagraphs() {
-  fetch('http://metaphorpsum.com/paragraphs/10')
+  fetch('https://metaphorpsum.com/paragraphs/10')
     .then((res) => res.text())
     .then((data) => {
       paragraphArray = data.split('\n\n');

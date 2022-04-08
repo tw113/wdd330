@@ -1,0 +1,151 @@
+body {
+  font-family: 'Roboto Serif', sans-serif;
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+}
+
+#title-bar {
+  background-color: #94B49F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title-bar button {
+  height: 50%;
+  margin-right: 60px;
+}
+
+#title-bar button:hover {
+  background-color: #53775f;
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+}
+
+.arrow {
+  border: none;
+  background-color: white;
+  color: #53775f;
+  font-size: xx-large;
+  font-weight: 800;
+  padding: 10px;
+  transform: scaleX(0.5);
+}
+
+.arrow:hover {
+  background-color: #b4cfb0;
+  cursor: pointer;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#settings-area {
+  height: 100px;
+}
+
+.keycap {
+  fill: #94B49F;
+}
+
+.keytext {
+  fill: white;
+}
+
+#case {
+  fill: #b4cfb0;
+}
+
+#keyboard-container {
+  width: 90%;
+  margin: auto;
+}
+
+#keyboard-settings {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  min-width: 80px;
+  border: none;
+  border-radius: 4px;
+}
+
+#keyboard-settings button {
+  color: white;
+  background-color: #94B49F;
+}
+
+#keyboard-settings button:hover {
+  background-color: #53775f;
+  cursor: pointer;
+}
+
+#keyboard {
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#keyboard.hide {
+  opacity: 0;
+}
+
+#practice-area {
+  border: none;
+  width: auto;
+  margin: 40px;
+  padding: 0;
+  font-family: 'Roboto Serif', sans-serif;
+  font-size: larger;
+  font-weight: bold;
+  color: rgb(126, 126, 126);
+  letter-spacing: 3px;
+  line-height: 1.6;
+}
+
+#typed-text {
+  padding: 0;
+  margin: 0;
+  color: rgb(53, 53, 53);
+}
+
+.error {
+  background-color: lightcoral;
+}
+
+.blink {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  letter-spacing: 0;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #161616;
+  }
+}
